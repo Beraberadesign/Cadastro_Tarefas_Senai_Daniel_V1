@@ -148,6 +148,31 @@ input[type="text"]:focus{
     text-align: center;
 }
 
+.foto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* ☀️ MODO CLARO */
+body {
+    background-image: url("fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Modo escuro */
+body.modo-escuro {
+    background-image: url("fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 @keyframes aparecer{
     from{
         opacity: 0; transform: translateY(10px);

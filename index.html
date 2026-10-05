@@ -8,7 +8,7 @@
     <!-- Biblioteca de ícones (Font Awesome) para compor a interface -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+   <img src="c:\Users\Aluno\Downloads\Screenshot_20261005_084426_WhatsApp.jpg" alt="Minha foto" class="foto">
     <div class="cartao-aplicacao">
         <header class="cabecalho-aplicacao">
             <h1>Minhas Tarefas ✨</h1>
@@ -16,6 +16,17 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
+
+        <!-- Função 1: Buscar tarefas --> 
+         <div class="caixa-busca"> 
+            <input type="text" id="campo-busca" placeholder="🔍 Buscar tarefa..." > 
+        </div> 
+        <!-- Função 2: Limpar tarefas concluídas --> 
+         <div class="acoes-tarefas"> 
+            <button id="botao-limpar-concluidas" class="botao-principal"> 
+                <i class="fa-solid fa-trash"></i> 
+                Limpar concluídas </button> 
+            </div>
 
         <div class="caixa-entrada">
             <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
