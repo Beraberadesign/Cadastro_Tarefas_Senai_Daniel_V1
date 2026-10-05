@@ -1,110 +1,112 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Meu Painel de Tarefas - SENAI</title>
+
     <link rel="stylesheet" href="style.css">
-    <!-- Biblioteca de ícones (Font Awesome) para compor a interface -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-   <img src="c:\Users\Aluno\Downloads\Screenshot_20261005_084426_WhatsApp.jpg" alt="Minha foto" class="foto">
+
+<body>
+
     <div class="cartao-aplicacao">
+
         <header class="cabecalho-aplicacao">
-            <h1>Minhas Tarefas ✨</h1>
-            <button id="botao-alternar-tema" class="botao-icone">
+
+            <div class="titulo">
+                <img src="c:\Users\Daniel Martinez\Downloads\minhafoto.jpg"
+                     alt="Minha foto"
+                     class="foto">
+
+                <div>
+                    <h1>Minhas Tarefas ✨</h1>
+                    <p>Organize suas tarefas do SENAI</p>
+                </div>
+            </div>
+
+            <!-- Botão de tema -->
+            <button id="botao-alternar-tema"
+                    class="botao-icone"
+                    title="Alternar tema">
+
                 <i class="fa-solid fa-moon"></i>
+
             </button>
+
         </header>
 
-        <!-- Função 1: Buscar tarefas --> 
-         <div class="caixa-busca"> 
-            <input type="text" id="campo-busca" placeholder="🔍 Buscar tarefa..." > 
-        </div> 
-        <!-- Função 2: Limpar tarefas concluídas --> 
-         <div class="acoes-tarefas"> 
-            <button id="botao-limpar-concluidas" class="botao-principal"> 
-                <i class="fa-solid fa-trash"></i> 
-                Limpar concluídas </button> 
-            </div>
 
-        <div class="caixa-entrada">
-            <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
-            <button id="botao-adicionar" class="botao-principal">
-                <i class="fa-solid fa-plus"></i> Adicionar
-            </button>
+        <!-- Buscar tarefas -->
+        <div class="caixa-busca">
+
+            <input type="text"
+                   id="campo-busca"
+                   placeholder="🔍 Buscar tarefa...">
+
         </div>
 
-        <ul id="lista-tarefas" class="lista-tarefas">
-            <!-- As tarefas serão inseridas aqui dinamicamente via JavaScript -->
+
+        <!-- Limpar tarefas concluídas -->
+        <div class="acoes-tarefas">
+
+            <button id="botao-limpar-concluidas"
+                    class="botao-principal">
+
+                <i class="fa-solid fa-trash"></i>
+
+                Limpar concluídas
+
+            </button>
+
+        </div>
+
+
+        <!-- Adicionar tarefa -->
+        <div class="caixa-entrada">
+
+            <input type="text"
+                   id="campo-tarefa"
+                   placeholder="O que vamos fazer hoje?..."
+                   maxlength="40">
+
+            <button id="botao-adicionar"
+                    class="botao-principal">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Adicionar
+
+            </button>
+
+        </div>
+
+
+        <!-- Lista de tarefas -->
+        <ul id="lista-tarefas"
+            class="lista-tarefas">
+
         </ul>
 
+
+        <!-- Rodapé -->
         <footer class="rodape-aplicacao">
-            <span id="contador-tarefas">0 tarefas na lista</span>
+
+            <span id="contador-tarefas">
+                0 tarefas na lista
+            </span>
+
         </footer>
+
     </div>
+
 
     <script src="script.js"></script>
-=======
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Estoque - POO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Cadastro de Produtos</h1>
 
-        <!--Formulário de Entrada-->
-        <form id="produto-form">
-            <div class="form-group">
-                <label for="nome">Nome do produto:</label>
-                <input type="text" id="nome" placeholder="Ex. Notebook" required />
-            </div>
-
-            <div class="form-group">
-                <label for="nome">Preço (R$):</label>
-                <input type="number" id="preco" step="0.01" placeholder="Ex. 3500.00" required />
-            </div>
-
-            <div class="form-group">
-                <label for="nome">Quantidade:</label>
-                <input type="number" id="quantidade" placeholder="Ex. 5" required />
-            </div>
-
-            <button type="submit" class="btn-primary">Adicionar Produto</button>
-        </form>
-
-        <!-- Cabeçalho de Ações e Resumo -->
-         <div class="resumo-container">
-            <h3 id="total-estoque">Total em Estoque: R$0,00</h3>
-            <button id="limpar-tabela" class="btn-danger">Limpar Tudo</button>
-         </div>
-
-         <!-- Tabela de Exibição -->
-          <table id="tabela-produtos">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Preço Un.</th>
-                    <th>Qtd.</th>
-                    <th>Subtotal</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- As linhas da tabela serão inseridas pelo JS -->
-            </tbody>
-          </table>
-    </div>
-
-    <script src="script.js">
-
-    </script>
-    
->>>>>>> f257acaa3eed512b8de5af66edde7c685f59eda3
 </body>
 </html>
