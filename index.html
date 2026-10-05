@@ -11,11 +11,23 @@
 <body>
     <div class="cartao-aplicacao">
         <header class="cabecalho-aplicacao">
-            <h1>Minhas Tarefas ✨</h1>
-            <button id="botao-alternar-tema" class="botao-icone">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <div class="banner">
+                <button id="botao-alternar-tema" class="botao-icone" title="Alternar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+            <div class="perfil">
+                <div class="avatar">
+                    <img src="foto-perfil.jpg" alt="Minha foto de perfil" class="foto-perfil">
+                    <span class="status-online" title="Online"></span>
+                </div>
+                <div class="identidade">
+                    <h1>Minhas Tarefas ✨</h1>
+                    <span class="subtitulo">Painel de tarefas • SENAI</span>
+                </div>
+            </div>
         </header>
+        <div class="corpo-aplicacao">
 
         <div class="caixa-entrada">
             <input type="text" id="campo-tarefa" placeholder="O que vamos fazer hoje?..." maxlength="40">
@@ -31,6 +43,7 @@
         <footer class="rodape-aplicacao">
             <span id="contador-tarefas">0 tarefas na lista</span>
         </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
