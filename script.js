@@ -3,7 +3,6 @@ const botaoAdicionar = document.getElementById('botao-adicionar');
 const listaTarefas = document.getElementById('lista-tarefas');
 const contadorTarefas = document.getElementById('contador-tarefas');
 const botaoAlternarTema = document.getElementById('botao-alternar-tema');
-
 let totalDeTarefas = 0;
 function adicionarTarefa() {
     const textoTarefa = campoTarefa.value.trim();
